@@ -1,7 +1,7 @@
 
-# 🧠 3D Heart MRI Segmentation Report
+# 3D Heart MRI Segmentation Report
 
-## 📂 Dataset Access and Loading (10 pts)
+## Dataset Access and Loading (10 pts)
 
 The dataset used is from the **Medical Segmentation Decathlon (Task02_Heart)** challenge, accessible at [medicaldecathlon.com](http://medicaldecathlon.com/). It contains:
 
@@ -42,9 +42,9 @@ data = (data - data.mean()) / data.std()
 | ![Axial](figures/axial.png) | ![Coronal](figures/coronal.png) | ![Sagittal](figures/sagittal.png) |
 
 
-## 🧱 Model Architecture (10 pts)
+## Model Architecture (10 pts)
 
-We implemented a **3D U-Net** style convolutional neural network with skip connections. The architecture consists of an encoder-decoder structure with the following layers:
+Implemented a **3D U-Net** style convolutional neural network with skip connections. The architecture consists of an encoder-decoder structure with the following layers:
 
 - **Encoder:** Two downsampling blocks with 3D convolutions and max pooling.
 - **Bottleneck:** Middle block with deeper convolutions.
@@ -66,7 +66,7 @@ We implemented a **3D U-Net** style convolutional neural network with skip conne
 ![TensorBoard Graph](tensorboard/model_graph.png)
 
 
-## 🏋️ Training Implementation (10 pts)
+## Training Implementation (10 pts)
 
 Training was performed using PyTorch with the following settings:
 
@@ -94,7 +94,7 @@ def dice_loss(pred, target, smooth=1.):
 ![Train vs Val Dice Loss](tensorboard/dice_loss_curves.png)
 
 
-## ✅ Model Evaluation (10 pts)
+## Model Evaluation (10 pts)
 
 Evaluation was performed on a held-out validation set. We computed the **Dice coefficient** as the main metric.
 
@@ -115,7 +115,7 @@ Evaluation was performed on a held-out validation set. We computed the **Dice co
 ![3D Rendering](results/3d_segmentation.png)
 
 
-## 📊 TensorBoard Logs (Best Model Only)
+## TensorBoard Logs (Best Model Only)
 
 All logs were generated using PyTorch’s `SummaryWriter`. The best model logs include:
 
