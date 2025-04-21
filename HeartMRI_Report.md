@@ -90,8 +90,9 @@ def dice_loss(pred, target, smooth=1.):
 ```
 
 ### TensorBoard Dice Loss Curves
+![dice_loss_curves](https://github.com/user-attachments/assets/e41b8319-2294-402a-becc-0a014260acef)
 
-![Train vs Val Dice Loss](tensorboard/dice_loss_curves.png)
+
 
 
 ## Model Evaluation (10 pts)
