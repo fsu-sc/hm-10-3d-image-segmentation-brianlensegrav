@@ -36,10 +36,10 @@ data = (data - data.mean()) / data.std()
 ```
 
 ### Sample Visualizations
-
-| Axial Slice | Coronal Slice | Sagittal Slice |
-|-------------|----------------|----------------|
-| ![Axial](figures/axial.png) | ![Coronal](figures/coronal.png) | ![Sagittal](figures/sagittal.png) |
+| <img width="254" alt="Screenshot 2025-04-21 at 5 16 29 PM" src="https://github.com/user-attachments/assets/9f8b5f4d-669d-428e-a6fc-ae004b3ad3f3" />
+ | <img width="261" alt="Screenshot 2025-04-21 at 5 17 00 PM" src="https://github.com/user-attachments/assets/e02d7b58-674c-4a3f-a9ad-2dd4326f549e" />
+ |<img width="257" alt="Screenshot 2025-04-21 at 5 17 20 PM" src="https://github.com/user-attachments/assets/5708d0ed-ca6b-4d27-9a63-e96af534e033" />
+ |
 
 
 ## Model Architecture (10 pts)
@@ -105,15 +105,12 @@ Evaluation was performed on a held-out validation set. We computed the **Dice co
 - **Best Epoch:** 36
 
 ### Sample Segmentation Results
+<img width="262" alt="Screenshot 2025-04-21 at 5 15 35 PM" src="https://github.com/user-attachments/assets/d5dd5ef0-a6af-4722-82f3-969fd9b44e7f" />
 
-| Case ID | Slice | Ground Truth | Prediction |
-|---------|-------|--------------|------------|
-| 001     | Axial 75 | ![GT](results/gt_001.png) | ![Pred](results/pred_001.png) |
-| 007     | Coronal 90 | ![GT](results/gt_007.png) | ![Pred](results/pred_007.png) |
 
 ### 3D Visualization
+<img width="549" alt="Screenshot 2025-04-21 at 5 12 51 PM" src="https://github.com/user-attachments/assets/3a8c7782-857d-4d1f-b1f2-541e5adf3a9d" />
 
-![3D Rendering](results/3d_segmentation.png)
 
 
 ## TensorBoard Logs (Best Model Only)
